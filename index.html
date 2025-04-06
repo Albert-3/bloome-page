@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloomé - Խնամքի Կենտրոն</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff8f5;
+      color: #333;
+    }
+    header {
+      background-color: #fddde6;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #c35d7f;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #c35d7f;
+      font-weight: 600;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(to bottom, #fce4ec, #fff8f5);
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .services {
+      padding: 3rem 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    .partners {
+      background-color: #fff0f4;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .partners h2 {
+      color: #c35d7f;
+      margin-bottom: 2rem;
+    }
+    .partners .card {
+      background-color: #fff;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #fddde6;
+      color: #c35d7f;
+      margin-top: 3rem;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      background-color: #c35d7f;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a34465;
+    }
+    .contact {
+      max-width: 600px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .contact h2 {
+      margin-bottom: 1.5rem;
+      color: #c35d7f;
+    }
+    .contact label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bloomé</h1>
+    <nav>
+      <a href="#services">Ծառայություններ</a>
+      <a href="#partners">Գործընկերներ</a>
+      <a href="#contact">Կապ</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Գեղեցկությունը սկսվում է խնամքից</h2>
+    <p>Բարի գալուստ Bloomé խնամքի կենտրոն — հանգստություն, թարմություն և բնական գեղեցկություն՝ մեկ վայրում։</p>
+    <br>
+    <button onclick="alert('Շնորհակալություն ձեր հետաքրքրության համար!')">Ամրագրել այց</button>
+  </section>
+
+  <section id="services" class="services">
+    <div class="card">
+      <img src="https://www.bizratings.online/wp-content/uploads/2021/02/%D5%84%D5%A1%D5%B7%D5%AF%D5%AB-%D4%BD%D5%B6%D5%A1%D5%B4%D6%84-%D5%84%D5%A1%D5%B7%D5%AF-%D4%BD%D5%B6%D5%A1%D5%B4%D5%A5%D5%AC.jpg" alt="Դեմքի խնամք">
+      <h3>Դեմքի Խնամք</h3>
+      <p>Մաքրման, խոնավեցման և երիտասարդացման պրոցեդուրաներ՝ բնական միջոցներով։</p>
+    </div>
+    <div class="card">
+      <img src="https://blog.168.am/wp-content/uploads/2016/10/massage3.jpg" alt="Մերսում">
+      <h3>Մերսում</h3>
+      <p>Թուլացնող և բուժիչ մերսումներ՝ ամբողջ մարմնի համար։</p>
+    </div>
+    <div class="card">
+      <img src="https://salesboom.am/files/1426960618/4_d0096_1485977816.jpg" alt="Մանիկյուր">
+      <h3>Մանիկյուր/Պեդիկյուր</h3>
+      <p>Նրբագեղ խնամք՝ ձեռքերի և ոտքերի համար։</p>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDf98OQ6tgEEYH5N_1BkmkZ3Pwx7EAedcZmw&s" alt="Սպա փաթեթներ">
+      <h3>Սպա Փաթեթներ</h3>
+      <p>Հատուկ փաթեթներ՝ հոգու և մարմնի լիարժեք վերականգնման համար։</p>
+    </div>
+  </section>
+
+  <section id="partners" class="partners">
+    <h2>Գործընկերներ</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=600&q=60" alt="Ֆիթնես կենտրոն">
+        <h3>FitPoint Ֆիթնես Կենտրոն</h3>
+        <p>Bloomé հաճախորդները ստանում են <strong>10%</strong> զեղչի քարտ՝ FitPoint ֆիթնես կենտրոնում մարզվելու համար։</p>
+      </div>
+      <div class="card">
+        <img src="https://armland.am/wp-content/uploads/2018/11/cover-4.jpg" alt="Արշավային ընկերություն">
+        <h3>TravelAr արշավներ</h3>
+        <p>Գեղեցկության և հանգստի ամբողջական փորձառություն՝ Bloomé-ի հաճախորդներին հասանելի է <strong>15%</strong> զեղչի քարտ TravelAr արշավներին մասնակցելու համար։</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Կապ մեզ հետ</h2>
+    <form onsubmit="event.preventDefault(); alert('Շնորհակալություն, մենք կկապվենք Ձեզ հետ շուտով!');">
+      <label for="name">Անուն</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Էլ.փոստ</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Հաղորդագրություն</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Ուղարկել</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Bloomé Խնամքի Կենտրոն · Բոլոր իրավունքները պաշտպանված են</p>
+  </footer>
+</body>
+</html>
